@@ -5,23 +5,16 @@ using namespace std;
 int main(){
     int h, m, s, err = 0;
 
-    do
-    {
+    do{
         cout<<"Enter hour: "; cin>>h;
         cout<<"Enter minutes: "; cin>>m;
         cout<<"Enter seconds: "; cin>>s;
-
-        if (h<24 && m<60 && s<60)
-            err++;
+        if (h<24 && m<60 && s<60) err++;
         system("clear");
     } while (err == 0);
-    
-
-while (1)
-{
+while (True){
     system("clear");
-    cout<<h<<" : "<<m<<" : "<<s<<endl;
-    
+    cout<<h<<" : "<<m<<" : "<<s<<endl; 
     s++;
     if(s == 60){
         m++;
@@ -36,4 +29,3 @@ while (1)
     sleep(1);
 }
 }
-
